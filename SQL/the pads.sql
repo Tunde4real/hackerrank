@@ -53,7 +53,7 @@ There are a total of 3 professors.
 Explanation
 The results of the first query are formatted to the problem description's specifications.
 The results of the second query are ascendingly ordered first by number of names corresponding to each profession (), 
-and then alphabetically by profession (, and ).
+and then alphabetically by profession (doctor<=singer, and actor<=professor).
 */
 
 
