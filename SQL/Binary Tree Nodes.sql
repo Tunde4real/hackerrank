@@ -35,3 +35,11 @@ The Binary Tree below illustrates the sample:
                 2               8
             1       3       6       9
 */
+
+SELECT N, 
+    CASE WHEN P IS NULL THEN 'Root'
+        WHEN N IN (SELECT P FROM BST) THEN 'Inner'
+        ELSE 'Leaf'
+    END AS NODE
+FROM BST
+ORDER BY N
